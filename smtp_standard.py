@@ -11,7 +11,7 @@ def send_mail(sub, content):
         content: content
         send_mail(to_list, 'sub', 'content')
     ''' 
-    mailto_list=['2256280155@qq.com']
+    mailto_list=['10000@qq.com']
     #mail_host='mail.monitor.com'
     mail_user='test1@monitor.com'
     #mail_pass='xxxx'
