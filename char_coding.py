@@ -12,5 +12,5 @@ print(uni)
 
 #Why this error?
 ##UnicodeDecodeError: 'ascii' codec can't decode byte 0xe8 in position 0: ordinal not in range(128)
-#在第4行，程序要做的事情是先解码，s.decode()函数默认使用ascii参数，因为是中文，必然报错。
-#所以需要显式调用，并使用utf-8参数。
+#在第4行，程序要做的事情是先解码。s.decode()函数默认使用ascii参数，因为原字符串使用中文编码，通过ascii解码，必然报错。
+#所以需要显式调用，并使用utf-8解码。
