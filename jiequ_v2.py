@@ -1,12 +1,16 @@
+#coding: utf-8
 import sys
 
 def linesplit( filename ):
+    """按字节读取文件
+    """
 
     with open( filename, 'r' ) as inputfile:
 
         buf = ''
         while True:
 
+            # 合理设置单次读取大小，可以提高读取速度
             chunck = inputfile.read( 1024*32 )
             if chunck == '':
                 break
