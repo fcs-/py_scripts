@@ -9,7 +9,7 @@ import time
 
 def epoch_to_acctime():
 
-    f=open('/root/.bash_history','r')
+    f=open('~/.bash_history','r')
     flist=f.readlines()
     f.close()
     Len=len(flist)
@@ -25,7 +25,7 @@ def epoch_to_acctime():
                 tim = '#'+time.strftime("%Y-%m-%d %H:%M:%S", t1) 
                 flist[i] = tim+'\n'
 
-    f=open('/root/.bash_history','w')
+    f=open('~/.bash_history','w')
     f.writelines(flist)
     f.close()
 
