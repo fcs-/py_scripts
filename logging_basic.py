@@ -2,7 +2,7 @@
 import logging
 import sys
 
-"""
+"""脚本用来展示logging模块的基本用法.
 """
 
 logger = logging.getLogger("AppName")
